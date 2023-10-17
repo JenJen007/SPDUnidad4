@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Extras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cerulean/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./index.html"><font _mstmutation="1" _msttexthash="59059" _msthash="73">Inicio</font><span class="visually-hidden" _msttexthash="97968" _msthash="74">(actual)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" _msttexthash="300144" _msthash="78">Menú</a>
+                    <div class="dropdown-menu" _msthidden="4">
+                      <a class="dropdown-item" href="./discoDuro.html" _msttexthash="76466" _msthidden="1" _msthash="79">Disco Duro</a>
+                      <a class="dropdown-item" href="./controlador.html" _msttexthash="232752" _msthidden="1" _msthash="80">Controlador</a>
+                      <a class="dropdown-item" href="./extras.html" _msttexthash="349791" _msthidden="1" _msthash="81">Extras</a>
+                      <a class="dropdown-item" href="./conclusion.html" _msttexthash="349791" _msthidden="1" _msthash="81">Conclusión</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Acceso e Interfaces</h4>
+          <p class="card-text">
+            Las unidades de disco duro se conectan a las computadoras a través de
+          diversos tipos de interfaces, incluyendo ATA paralelo, ATA serie,
+          SCSI, SAS (SCSI conectado en serie), canal de fibra, IEEE 1394, USB,
+          entre otros. Estas interfaces son digitales y permiten la comunicación
+          entre la unidad y el sistema, independientemente de cómo se codifican
+          los datos internamente en la unidad o cuántos discos y cabezales
+          físicos tenga la unidad.
+          </p>
+          <p>
+            Para procesar las señales analógicas de los cabezales de
+          lectura/escritura, las unidades modernas utilizan un DSP (Procesador
+          de Señal Digital) que emplea técnicas como PRML y corrección de
+          errores Reed-Solomon. Esto permite decodificar los datos y enviarlos a
+          la interfaz estándar. El DSP también monitorea la tasa de errores,
+          realiza reasignaciones de sectores defectuosos y recopila datos para
+          funciones de autodiagnóstico y análisis.
+          </p>
+          <p>
+            Las interfaces modernas utilizan un solo cable de datos/control para
+            conectar la unidad al host, junto con un cable de alimentación directo
+            a la fuente de alimentación. En contraste, las interfaces más antiguas
+            requerían cables separados para señales de datos y control.
+          </p>
+          <div class="card border-secondary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Algunos de los estándares de interfaz más conocidos incluyen:</div>
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <p class="card-text">
+                <ul>
+                    <li>
+                      SCSI (Small Computer System Interface): Utilizado en servidores,
+                      estaciones de trabajo y computadoras como Amiga, Atari ST y
+                      Macintosh. Aunque muchas computadoras han migrado a interfaces más
+                      nuevas, el conjunto de comandos SCSI todavía se utiliza en la
+                      interfaz SAS moderna.
+                    </li>
+                    <li>
+                      IDE (Integrated Drive Electronics), también conocido como ATA
+                      (Advanced Technology Attachment): Movió el controlador HDD de la
+                      tarjeta de interfaz a la unidad de disco, lo que estandarizó la
+                      interfaz host/controlador y redujo la complejidad. IDE utilizaba
+                      cables de 40 pines, que posteriormente se actualizaron a cables de
+                      80 conductores para admitir modos de alta velocidad como UDMA.
+                    </li>
+                    <li>
+                      EIDE (Enhanced Integrated Drive Electronics): Una mejora no oficial
+                      de IDE que introdujo DMA para transferir datos directamente entre la
+                      memoria y el disco sin la intervención de la CPU.
+                    </li>
+                    <li>
+                      Fibre Channel (FC): Un sucesor de la interfaz SCSI en el ámbito
+                      empresarial, utilizado en redes de almacenamiento (SAN). Aunque se
+                      llama "Fibre," a menudo se utiliza cobre en lugar de fibra óptica
+                      para conexiones de unidad.
+                    </li>
+                    <li>
+                      SAS (Serial Attached SCSI): Un protocolo de comunicación serie que
+                      permite transferencias de datos a alta velocidad y es compatible con
+                      SATA. Utiliza una conexión mecánicamente compatible con discos duros
+                      SATA estándar.
+                    </li>
+                    <li>
+                      SATA (Serial ATA): Utilizado comúnmente en computadoras personales,
+                      utilizan conexiones serie para la transmisión de datos. Las unidades
+                      SATA pueden ser controladas por controladores SAS en algunos casos,
+                      pero no al revés.
+                    </li>
+                  </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Interfaces de Disco Duro</h4>
+          <p class="card-text">
+            <ul>
+                <li>IDE (Integrated Drive Electronics): IDE integra el controlador de disco duro con el
+                  propio disco. Esto reduce la cantidad de cables y mejora la confiabilidad de la
+                  transmisión de datos. Aunque es económico y compatible, se ha vuelto menos común
+                  en favor de interfaces más modernas.
+                  </li>
+                  <li>SCSI (Small Computer System Interface): SCSI es una interfaz de alta velocidad
+                    que se utiliza principalmente en servidores y estaciones de trabajo avanzadas. Ofrece
+                    ventajas como multitarea, alto ancho de banda y capacidad de intercambio en
+                    caliente, pero es más costoso que IDE.
+                    </li>
+                    <li>
+                      Canal de fibra (Fiber Channel): Inicialmente diseñado para redes, el canal de fibra
+              se utiliza en sistemas de disco duro de alto rendimiento. Ofrece características como
+              intercambio en caliente, ancho de banda de alta velocidad y conexión de larga
+              distancia.
+                    </li>
+                    <li>
+                      SATA (Serial ATA): SATA es una interfaz de disco duro serial utilizada en la
+              mayoría de las computadoras personales. Ofrece ventajas como mayor capacidad de
+              corrección de errores y velocidades de transmisión más rápidas que IDE.
+                    </li>
+                    <li>
+                      SATA II: SATA II es una versión mejorada de SATA que aumenta la velocidad de
+              transmisión externa de 1.5Gbps a 3Gbps y presenta tecnologías adicionales como
+              NCQ (Native Command Queuing).
+                    </li>
+              </ul>
+          </p>
+        </div>
+      </div>
+      <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h3 class="card-title">Controlador Raid</h3>
+          <p class="card-text">
+            Un controlador RAID es una tarjeta o chip ubicado entre el sistema
+              operativo y una unidad de almacenamiento (generalmente un disco duro).
+          </p>
+          <h4>¿Qué hace un controlador RAID?</h4>
+            <p>
+              Virtualiza las unidades en diferentes grupos con características
+              específicas de protección de datos y redundancia. La interfaz
+              front-end normalmente se comunica con el servidor a través de un
+              adaptador basado en host (HBA). El backend se comunica con el medio de
+              almacenamiento subyacente y lo administra; generalmente es ATA, SCSI,
+              SATA, SAS o Fibre Channel.
+            </p>
+            <p>
+              Los controladores RAID se clasifican por las múltiples características
+              que incluyen tipos de unidades (como SATA o SAS), niveles RAID
+              específicos y el número de puertos y unidades compatibles. El
+              controlador RAID no es un controlador de almacenamiento. El
+              controlador de almacenamiento proporciona el disco activo al sistema,
+              mientras que el controlador RAID actúa como caché de RAM y proporciona
+              funciones RAID.
+            </p>
+        </div>
+      </div>
+      <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Controladores RAID de hardware VS software</h4>
+          <p class="card-text">
+            <ul>
+              <li>
+                Basado en hardware: Los controladores RAID de hardware son
+                dispositivos dedicados diseñados para gestionar las configuraciones
+                RAID de un conjunto de discos. Existen dos variantes principales:
+                tarjetas controladoras RAID y RAID en chip interno.
+              </li>
+              <li>
+                Tarjetas controladoras RAID: Son dispositivos físicos que se
+                insertan en las ranuras PCIe o PCI-X de una placa base. Estas
+                tarjetas incorporan su propio procesador RAID y procesador de E/S
+                con interfaz de unidad independiente, lo que les permite administrar
+                y controlar completamente los discos conectados.
+              </li>
+              <li>
+                RAID en chip: Esta opción más económica implica la integración de un
+                chip RAID en la placa base. Este chip único incluye una interfaz de
+                host, una interfaz de E/S para los discos duros, un procesador RAID
+                y un controlador de memoria.
+              </li>
+              <li>
+                Basado en software: Los controladores RAID de software operan desde
+                el sistema host en lugar de un dispositivo físico independiente
+              </li>
+              <li>
+                RAID solo de software: Este enfoque utiliza las funciones RAID
+                nativas del sistema operativo anfitrión y se considera la opción más
+                económica. El cálculo de RAID y la gestión de discos se realizan a
+                través de la aplicación basada en el host,utilizando controladores
+                nativos de host bus adapter (HBA) o interfaces de E/S para
+                comunicarse con las unidades de almacenamiento.
+              </li>
+              <li>
+                RAID híbrido de hardware/software: Este enfoque combina las funciones de BIOS
+    RAID proporcionadas por la placa base o un HBA con un componente de hardware
+    adicional. Esta tecnología híbrida agrega una capa adicional de administración y,
+    aunque aumenta el costo en comparación con el RAID solo de software, ofrece
+    protección contra errores de inicio del sistema operativo.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="card border-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Controladores RAID de hardware VS software</h4>
+          <p class="card-text">
+            <ul>
+              <li>
+                Basado en hardware: Los controladores RAID de hardware son
+                dispositivos dedicados diseñados para gestionar las configuraciones
+                RAID de un conjunto de discos. Existen dos variantes principales:
+                tarjetas controladoras RAID y RAID en chip interno.
+              </li>
+              <li>
+                Tarjetas controladoras RAID: Son dispositivos físicos que se
+                insertan en las ranuras PCIe o PCI-X de una placa base. Estas
+                tarjetas incorporan su propio procesador RAID y procesador de E/S
+                con interfaz de unidad independiente, lo que les permite administrar
+                y controlar completamente los discos conectados.
+              </li>
+              <li>
+                RAID en chip: Esta opción más económica implica la integración de un
+                chip RAID en la placa base. Este chip único incluye una interfaz de
+                host, una interfaz de E/S para los discos duros, un procesador RAID
+                y un controlador de memoria.
+              </li>
+              <li>
+                Basado en software: Los controladores RAID de software operan desde
+                el sistema host en lugar de un dispositivo físico independiente
+              </li>
+              <li>
+                RAID solo de software: Este enfoque utiliza las funciones RAID
+                nativas del sistema operativo anfitrión y se considera la opción más
+                económica. El cálculo de RAID y la gestión de discos se realizan a
+                través de la aplicación basada en el host,utilizando controladores
+                nativos de host bus adapter (HBA) o interfaces de E/S para
+                comunicarse con las unidades de almacenamiento.
+              </li>
+              <li>
+                RAID híbrido de hardware/software: Este enfoque combina las funciones de BIOS
+    RAID proporcionadas por la placa base o un HBA con un componente de hardware
+    adicional. Esta tecnología híbrida agrega una capa adicional de administración y,
+    aunque aumenta el costo en comparación con el RAID solo de software, ofrece
+    protección contra errores de inicio del sistema operativo.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <a href="#">Ir Arriba</a>
+        <br>
+        <p>Copywright 2023</p>
+        <p>Sistema de Procesamiento de Datos</p>
+    </footer>
+</body>
+</html>

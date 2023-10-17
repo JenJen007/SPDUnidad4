@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cerulean/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Controladores</title>
+</head>
+
+<body>
+  <div id="contenedorP">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"">Menú</a>
+                <div class="dropdown-menu" _msthidden="4">
+                  <a class="dropdown-item" href="./discoDuro.html">Disco Duro</a>
+                  <a class="dropdown-item active" href="./controladores.html">Controlador</a>
+                  <a class="dropdown-item" href="./extras.html">Extras</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="Controlador">
+        <h2>¿Que es un controlador?</h2>
+        <p class="parrafo">
+          En el sentido más fundamental, un controlador es un componente de
+          software que permite al sistema operativo y un dispositivo comunicarse
+          entre sí. Por ejemplo, supongamos que una aplicación debe leer algunos
+          datos de un dispositivo. La aplicación llama a una función
+          implementada por el sistema operativo y el sistema operativo llama a
+          una función implementada por el controlador. El controlador, escrito
+          por la misma empresa que diseñó y fabricó el dispositivo, sabe cómo
+          comunicarse con el hardware del dispositivo para obtener los datos.
+          Una vez que el controlador obtiene los datos del dispositivo, devuelve
+          los datos al sistema operativo, que lo devuelve a la aplicación.
+        </p>
+        <img src="./img/Grafico Driver.PNG" alt="grafico driver" />
+        <p>
+          No todos los controladores deben ser escritos por la empresa que
+          diseñó el dispositivo. En muchos casos, un dispositivo está diseñado
+          según un estándar de hardware publicado. Por lo tanto, Microsoft puede
+          escribir el controlador y el diseñador de dispositivos no tiene que
+          proporcionar un controlador.
+        </p>
+        <p>
+          No todos los controladores se comunican directamente con un
+          dispositivo. Para una solicitud de E/S determinada (como leer datos de
+          un dispositivo), a menudo hay varios controladores superpuestos en una
+          pila de controladores que participan en la solicitud. La forma
+          convencional de visualizar la pila es con el primer participante en la
+          parte superior y el último participante de la parte inferior, como se
+          muestra en este diagrama. Algunos de los controladores de la pila
+          pueden participar mediante la transformación de la solicitud de un
+          formato a otro. Estos controladores no se comunican directamente con
+          el dispositivo; simplemente manipulan la solicitud y pasan la
+          solicitud a los controladores que están más bajos en la pila.
+        </p>
+        <img src="./img/grafico driver 2.PNG" alt="grafico driver 2" />
+        <p>
+          Controlador de función: el controlador de la pila que se comunica
+          directamente con el dispositivo se denomina controlador de función.
+          Controlador de filtro: los controladores que realizan el procesamiento
+          auxiliar se denominan controladores de filtro.
+        </p>
+        <p>
+          Algunos controladores de filtro observan y registran información sobre
+          las solicitudes de E/S, pero no participan activamente en ellas. Por
+          ejemplo, algunos controladores de filtro actúan como comprobadores
+          para asegurarse de que los demás controladores de la pila controlan
+          correctamente la solicitud de E/S.
+        </p>
+        <p>
+          Podríamos ampliar nuestra definición de controlador diciendo que un
+          controlador es cualquier componente de software que observe o
+          participe en la comunicación entre el sistema operativo y un
+          dispositivo.
+        </p>
+      </article>
+      <article>
+        <h2>Envío de Datos desde el Disco Duro</h2>
+        <p>
+          El proceso de cómo se envían los datos desde el disco duro a la
+          computadora mediante el controlador implica una serie de operaciones
+          técnicas y protocolos de comunicación.
+        </p>
+        <ol>
+          <li>
+            Almacenamiento en el buffer: Los datos recién leídos se almacenan
+            temporalmente en el buffer interno del disco duro. Este buffer actúa
+            como un búfer de transferencia para asegurar una comunicación fluida
+            entre el disco duro y la computadora.
+          </li>
+          <li>
+            Transferencia al controlador de disco duro: Los datos almacenados en
+            el buffer del disco duro se envían al controlador de disco duro, que
+            actúa como intermediario entre el disco y el sistema de
+            almacenamiento de la computadora.
+          </li>
+          <li>
+            Transferencia al controlador de almacenamiento: El controlador de
+            disco duro se comunica con el controlador de almacenamiento de la
+            computadora a través de la interfaz de disco, que puede ser SATA,
+            SAS u otra. La transferencia de datos desde el buffer del disco duro
+            al controlador de almacenamiento se realiza utilizando el protocolo
+            y las señales específicas de la interfaz.
+          </li>
+          <li>
+            Comunicación con la computadora: El controlador de almacenamiento de
+            la computadora recibe los datos mediante un bus y los transmite a la
+            memoria principal de la computadora utilizando protocolos de
+            comunicación de almacenamiento, como AHCI (Advanced Host Controller
+            Interface) en el caso de SATA.
+          </li>
+          <li>
+            Entrega al sistema operativo: Los datos se entregan al sistema
+            operativo, que los dirige al proceso o la aplicación que realizó la
+            solicitud original. Los datos se pueden acceder desde la memoria
+            principal de la computadora para su procesamiento o visualización.
+          </li>
+        </ol>
+        <a href="#">Ir Arriba</a>
+      </article>
+      
+    </main>
+    <footer>
+      <div>
+        <h2>Integrantes: </h2>
+        <ul>
+          <li><strong>Eros Mariotti</strong></li>
+          <li><strong>Laureano Berna</strong></li>
+          <li><strong>Jennifer Contreras</strong></li>
+          <li><strong>Julieta Sena</strong></li>
+          <li><strong>Chiara Moyano</strong></li>
+          <li><strong>Julio Rivas</strong></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Bibliografia: </h2>
+        <ul class="lista_bibliografia">
+          <li>
+            <a href="https://www.elgrupoinformatico.com/noticias/disco-duro-que-tipos-como-funciona-t79244.html">
+              Disco duro: qué es, tipos y cómo funciona (elgrupoinformatico.com).
+            </a>
+          </li>
+          <li><a
+              href="https://es.ccm.net/aplicaciones-e-internet/museo-de-internet/enciclopedia/11014-que-es-un-disco-duro-y-como-funciona/">
+              Fuente: Disco duro: qué es y cuál es su función (ccm.net)
+            </a></li>
+          <li><a href="https://www.computerhope.com/jargon/h/harddriv.htm">
+              Fuente: ¿Qué es un disco duro? (computerhope.com)
+            </a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Hard_disk_drive">
+              Fuente: Unidad de disco duro - Wikipedia, la enciclopedia libre
+            </a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
